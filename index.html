@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b43d6">
+  <meta name="description" content="Juego de memorama para practicar la memoria visual.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Memorama</title>
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand-icon">🧠</div>
+      <h1>Memorama</h1>
+      <p>Encuentra todas las parejas</p>
+    </header>
+    <section class="stats" aria-live="polite">
+      <div class="stat"><span class="stat-label">Movimientos</span><strong id="moves">0</strong></div>
+      <div class="stat"><span class="stat-label">Parejas</span><strong id="pairs">0 / 8</strong></div>
+      <div class="stat"><span class="stat-label">Tiempo</span><strong id="time">00:00</strong></div>
+    </section>
+    <section id="board" class="board" aria-label="Tablero de memorama"></section>
+    <button id="restart" class="restart">↻ Reiniciar juego</button>
+    <p id="message" class="message" aria-live="polite">¡Encuentra las 8 parejas!</p>
+    <footer>Hecho para practicar la memoria ✨</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
